@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    font-size: 1.4rem;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    color: #34355B;
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+}
+
+main {
+    background: #ffffff;
+    box-shadow: 0px 2.0rem 5.0rem rgba(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+    width: min(42.8rem, 90%);
+    margin-top: -12rem;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.screen1 p {
+    margin: 1.4rem 0 2.0rem 0;
+}
+
+.screen1 img {
+    cursor: pointer;
+
+}
+
+.screen1 img:hover {
+    animation: myAnim 1s ease 0s infinite normal forwards;
+}
+
+.screen2 p {
+    font-family: 'Dancing Script', sans-serif;
+    padding: 1.0rem;
+    font-size: 2.4rem;
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    margin-top: 1.7rem;
+    color: black;
+    animation: myAnim2 2.5s ease 0s normal forwards;
+}
+
+.screen2 img {
+    padding: 4.0rem 0 6.0rem 0;
+}
+
+.screen2 button {
+    font-family: 'DM Sans';
+    color: #FFFFFF;
+    padding: 1.6rem;
+    background: #FF9500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity .3s;
+}
+
+.screen2 button:hover {
+    opacity: 0.8;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes myAnim {
+    0% {
+        transform: translate(0);
+    }
+
+    10% {
+        transform: translate(-2px, -2px);
+    }
+
+    20% {
+        transform: translate(2px, -2px);
+    }
+
+    30% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(2px, 2px);
+    }
+
+    50% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, -2px);
+    }
+
+    70% {
+        transform: translate(-2px, 2px);
+    }
+
+    80% {
+        transform: translate(-2px, -2px);
+    }
+
+    90% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes myAnim2 {
+    0% {
+        transform: translateY(120px) scale(0);
+        transform-origin: 50% 100%;
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        transform-origin: 50% 100%;
+        opacity: 1;
+    }
+}
